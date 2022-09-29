@@ -1,0 +1,24 @@
+//this is created by 21CE126 Kathan Shah
+package practicals.Part_VI;
+import java.math.*;
+import java.util.Scanner;
+
+public class Random_numbers_main {
+
+    public static void main(String[] args) {
+        
+        Scanner sc = new Scanner(System.in);
+        Random_numbers_class t1 = new Random_numbers_class();
+        Random_numbers_class t2 = new Random_numbers_class();
+        int[] arr = new int[15];
+
+        for(int i=0; i<15; i++) {
+            double randNumber = Math.random();
+            double d = randNumber * 100;
+            arr[i] = (int)d;
+        }
+        t1.oddIndex(arr);
+        System.out.println();
+        t2.evenIndex(arr);   
+    }
+}
