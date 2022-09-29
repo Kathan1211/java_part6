@@ -1,0 +1,26 @@
+//this is created by 21ce126 Kathan Shah
+package practicals.Part_VI;
+
+public class Sleep_1_sec extends Thread {
+
+    public void run() {
+        int n = 1;
+        try {
+            while(true) {
+                System.out.println(n);
+                n++;
+                Thread.sleep(1000);
+            }
+        }
+            catch(Exception e) {}   
+}
+    
+    public static void main(String[] args) {
+        
+        Sleep_1_sec s1 = new Sleep_1_sec();
+        Thread t1 = new Thread(s1);
+        t1.start();
+
+    }
+
+}
