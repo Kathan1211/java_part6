@@ -1,0 +1,25 @@
+//this is created by 21ce126 Kathan Shah
+package practicals.Part_6;
+
+public class Priority_set extends Thread{
+
+    public static void main(String[] args) {
+        
+        Priority_set p1 = new Priority_set();
+        Priority_set p2 = new Priority_set();
+        Priority_set p3 = new Priority_set();
+        Thread FIRST = new Thread(p1);
+        Thread SECOND = new Thread(p2);
+        Thread THIRD = new Thread(p3);
+        
+        FIRST.setPriority(3);
+        SECOND.setPriority(5);
+        THIRD.setPriority(7);
+        
+        System.out.println("Thread 1 priority - " + FIRST.getPriority());
+        System.out.println("Thread 2 priority - " + SECOND.getPriority());
+        System.out.println("Thread 3 priority - " + THIRD.getPriority());
+
+    }
+
+}
